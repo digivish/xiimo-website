@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Xiimo — Independent Software Studio</title>
+  <meta name="description" content="Xiimo is an independent software studio engineering focused, operator-grade products for hospitality, commerce, and compliance." />
+  <meta name="keywords" content="Xiimo, software studio, SaaS, hospitality software, restaurant scheduling, Tableline, CateringHero, VendorGhosted, Beamm, AskZoe, Madeproof" />
+  <meta name="author" content="Xiimo Studio" />
+  <link rel="canonical" href="https://xiimo.com/" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://xiimo.com/" />
+  <meta property="og:title" content="Xiimo — Independent Software Studio" />
+  <meta property="og:description" content="Engineering focused, operator-grade products for hospitality, commerce, and compliance." />
+  <meta property="og:image" content="https://xiimo.com/og-image.png" />
+  <meta property="og:site_name" content="Xiimo" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Xiimo — Independent Software Studio" />
+  <meta name="twitter:description" content="Engineering focused, operator-grade products for hospitality, commerce, and compliance." />
+  <meta name="twitter:image" content="https://xiimo.com/og-image.png" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="alternate icon" href="/favicon.ico" />
+
+  <!-- Typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="/style.css" />
+
+  <!-- Schema.org Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://xiimo.com/#organization",
+        "name": "Xiimo",
+        "url": "https://xiimo.com/",
+        "logo": "https://xiimo.com/favicon.svg",
+        "email": "hello@xiimo.com",
+        "description": "Independent software studio engineering focused, operator-grade products.",
+        "foundingLocation": "Canada"
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://xiimo.com/#website",
+        "url": "https://xiimo.com/",
+        "name": "Xiimo",
+        "publisher": {
+          "@id": "https://xiimo.com/#organization"
+        }
+      },
+      {
+        "@type": "ItemList",
+        "name": "Products by Xiimo",
+        "itemListElement": [
+          {
+            "@type": "SoftwareApplication",
+            "name": "Tableline",
+            "url": "https://tableline.xiimo.com",
+            "applicationCategory": "BusinessApplication",
+            "operatingSystem": "Web",
+            "description": "Shift management and scheduling platform for restaurant operators."
+          },
+          {
+            "@type": "SoftwareApplication",
+            "name": "CateringHero",
+            "url": "https://cateringhero.xiimo.com",
+            "applicationCategory": "BusinessApplication",
+            "operatingSystem": "Web, Shopify",
+            "description": "Custom catering menus and ordering workflows on Shopify."
+          },
+          {
+            "@type": "SoftwareApplication",
+            "name": "VendorGhosted",
+            "url": "https://vendorghosted.com",
+            "applicationCategory": "BusinessApplication",
+            "operatingSystem": "Web",
+            "description": "Automated invoice chasing via personal Gmail OAuth for freelancers."
+          },
+          {
+            "@type": "SoftwareApplication",
+            "name": "Beamm / Paytouch",
+            "url": "https://trynestor.com",
+            "applicationCategory": "BusinessApplication",
+            "operatingSystem": "Web, Point of Sale",
+            "description": "Full-stack restaurant point of sale and operations platform. Acquired."
+          },
+          {
+            "@type": "SoftwareApplication",
+            "name": "AskZoe",
+            "url": "https://askzoe.ca",
+            "applicationCategory": "UtilityApplication",
+            "operatingSystem": "Web",
+            "description": "Electric vehicle discovery guide and incentive calculator for Canada, powered by Kord Mobility."
+          },
+          {
+            "@type": "SoftwareApplication",
+            "name": "Madeproof",
+            "url": "https://xiimo.com/#project-madeproof",
+            "applicationCategory": "BusinessApplication",
+            "operatingSystem": "Web",
+            "description": "FTC Made in USA compliance mapping and cryptographic audit packet export."
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <!-- Site Header -->
+  <header class="site-header" id="top">
+    <div class="header-inner container">
+      <a href="#top" class="brand" aria-label="Xiimo home">
+        <span class="brand-mark" aria-hidden="true">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+            <path d="M4 4L12 12M12 12L20 20M12 12L20 4M12 12L4 20" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+          </svg>
+        </span>
+        <span class="brand-name">xiimo</span>
+      </a>
+
+      <nav class="desktop-nav" aria-label="Main Navigation">
+        <a href="#work" class="nav-item">Selected Work</a>
+        <a href="#approach" class="nav-item">Approach</a>
+        <a href="#stack" class="nav-item">Architecture</a>
+        <a href="#contact" class="nav-item nav-item--cta">Contact</a>
+      </nav>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobileDrawer">
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+    </div>
+
+    <!-- Mobile Drawer -->
+    <div class="mobile-drawer" id="mobileDrawer" aria-hidden="true">
+      <nav class="mobile-nav" aria-label="Mobile Navigation">
+        <a href="#work" class="mobile-link">Selected Work</a>
+        <a href="#approach" class="mobile-link">Approach</a>
+        <a href="#stack" class="mobile-link">Architecture</a>
+        <a href="#contact" class="mobile-link">Contact</a>
+      </nav>
+      <div class="mobile-drawer-footer">
+        <span class="meta-label">Direct Contact</span>
+        <a href="mailto:hello@xiimo.com" class="meta-email">hello@xiimo.com</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content">
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <div class="container hero-layout">
+        
+        <div class="hero-primary">
+          <div class="status-indicator">
+            <span class="status-dot"></span>
+            <span class="status-text">Independent Software Studio</span>
+          </div>
+
+          <h1 class="hero-title">
+            Purpose-built software for specialized verticals.
+          </h1>
+
+          <p class="hero-lede">
+            Xiimo designs, builds, and operates targeted digital products. We solve concrete operational bottlenecks across hospitality, commerce, and compliance — with lean architecture, direct utility, and disciplined focus.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#work" class="btn btn-primary">
+              <span>View Shipped Products</span>
+              <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                <path d="M8 3v10M3 8l5 5 5-5" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+            <a href="mailto:hello@xiimo.com" class="btn btn-secondary">
+              <span>hello@xiimo.com</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Brand Identity Specimen Box (Foundry / Atelier style) -->
+        <aside class="hero-specimen" aria-label="Studio overview">
+          <div class="specimen-card">
+            <div class="specimen-top">
+              <div class="specimen-monogram">
+                <svg width="36" height="36" viewBox="0 0 36 36" fill="none">
+                  <rect width="36" height="36" rx="8" fill="#9fe3c1"/>
+                  <path d="M10 10L18 18M18 18L26 26M18 18L26 10M18 18L10 26" stroke="#081611" stroke-width="3" stroke-linecap="round"/>
+                </svg>
+              </div>
+              <span class="specimen-badge">PROD / 2026</span>
+            </div>
+
+            <div class="specimen-body">
+              <div class="specimen-eyebrow">Studio Tenet</div>
+              <p class="specimen-quote">
+                “Clear scope, minimal friction, durable code. Software that respects the operator’s time.”
+              </p>
+            </div>
+
+            <div class="specimen-metrics">
+              <div class="metric-block">
+                <span class="metric-val">06</span>
+                <span class="metric-lbl">Products Shipped</span>
+              </div>
+              <div class="metric-divider" aria-hidden="true"></div>
+              <div class="metric-block">
+                <span class="metric-val">01</span>
+                <span class="metric-lbl">Acquisition</span>
+              </div>
+              <div class="metric-divider" aria-hidden="true"></div>
+              <div class="metric-block">
+                <span class="metric-val">100%</span>
+                <span class="metric-lbl">Bootstrapped</span>
+              </div>
+            </div>
+          </div>
+        </aside>
+
+      </div>
+    </section>
+
+    <!-- Selected Work -->
+    <section class="section work-section" id="work" aria-labelledby="work-title">
+      <div class="container">
+        
+        <div class="section-head">
+          <div class="section-meta">
+            <span class="section-num">01</span>
+            <span class="section-label">Production Catalog</span>
+          </div>
+          <h2 id="work-title" class="section-title">Selected Work</h2>
+          <p class="section-desc">
+            A portfolio of focused tools built to solve distinct operational problems. No speculative prototypes — every application is live in market or successfully acquired.
+          </p>
+        </div>
+
+        <div class="projects-list">
+
+          <!-- 01 Tableline -->
+          <article class="project-entry" id="project-tableline">
+            <div class="project-header">
+              <div class="project-id-group">
+                <span class="project-index">01</span>
+                <span class="project-domain">Hospitality Operations</span>
+              </div>
+              <span class="project-status-tag status-live">Live Product</span>
+            </div>
+
+            <div class="project-content-grid">
+              <div class="project-summary">
+                <h3 class="project-heading">Tableline</h3>
+                <p class="project-role">Staff scheduling &amp; availability platform for multi-unit restaurant operators.</p>
+                <p class="project-narrative">
+                  Restaurant scheduling breaks down when systems are either too primitive or too bloated. Tableline provides managers with clear weekly shift builders (Floor, Kitchen, Bar, Open), live availability tracking, automated email delivery to team members, and integrated tenant billing.
+                </p>
+                <div class="project-action-wrap">
+                  <a href="https://tableline.xiimo.com" target="_blank" rel="noopener noreferrer" class="link-external" id="tableline-link">
+                    <span>Visit tableline.xiimo.com</span>
+                    <svg width="12" height="12" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+                      <path d="M2.5 11.5L11.5 2.5M11.5 2.5H5.5M11.5 2.5V8.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+
+              <div class="project-specs">
+                <div class="spec-group">
+                  <span class="spec-title">Core Capabilities</span>
+                  <ul class="spec-items">
+                    <li>Multi-location, multi-tenant workspace separation</li>
+                    <li>Role-based shifts: Floor, Kitchen, Bar, Open shifts</li>
+                    <li>Direct-to-inbox schedule delivery for staff</li>
+                    <li>Self-serve Stripe billing &amp; seat management</li>
+                  </ul>
+                </div>
+                <div class="spec-group">
+                  <span class="spec-title">Stack</span>
+                  <div class="tech-labels">
+                    <span class="tech-label">React</span>
+                    <span class="tech-label">Node.js</span>
+                    <span class="tech-label">PostgreSQL</span>
+                    <span class="tech-label">Clerk</span>
+                    <span class="tech-label">Stripe</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- 02 CateringHero -->
+          <article class="project-entry" id="project-cateringhero">
+            <div class="project-header">
+              <div class="project-id-group">
+                <span class="project-index">02</span>
+                <span class="project-domain">Commerce &amp; Foodservice</span>
+              </div>
+              <span class="project-status-tag status-live">Live Product</span>
+            </div>
+
+            <div class="project-content-grid">
+              <div class="project-summary">
+                <h3 class="project-heading">CateringHero</h3>
+                <p class="project-role">Turnkey catering menu architecture for Shopify merchants.</p>
+                <p class="project-narrative">
+                  Catering orders require package tiers, minimum guest counts, lead-time rules, and custom per-person add-ons — requirements standard Shopify themes cannot handle. CateringHero enables food businesses to embed structured catering ordering directly into their existing store without expensive custom builds.
+                </p>
+                <div class="project-action-wrap">
+                  <a href="https://cateringhero.xiimo.com" target="_blank" rel="noopener noreferrer" class="link-external" id="cateringhero-link">
+                    <span>Visit cateringhero.xiimo.com</span>
+                    <svg width="12" height="12" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+                      <path d="M2.5 11.5L11.5 2.5M11.5 2.5H5.5M11.5 2.5V8.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+
+              <div class="project-specs">
+                <div class="spec-group">
+                  <span class="spec-title">Core Capabilities</span>
+                  <ul class="spec-items">
+                    <li>Visual package &amp; menu builder for operators</li>
+                    <li>Native Shopify checkout integration</li>
+                    <li>Direct customer ordering flow with lead-time constraints</li>
+                    <li>Merchant-managed fulfillment limits</li>
+                  </ul>
+                </div>
+                <div class="spec-group">
+                  <span class="spec-title">Stack</span>
+                  <div class="tech-labels">
+                    <span class="tech-label">Next.js</span>
+                    <span class="tech-label">Shopify API</span>
+                    <span class="tech-label">Drizzle ORM</span>
+                    <span class="tech-label">PostgreSQL</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- 03 VendorGhosted -->
+          <article class="project-entry" id="project-vendorghosted">
+            <div class="project-header">
+              <div class="project-id-group">
+                <span class="project-index">03</span>
+                <span class="project-domain">Financial Workflows</span>
+              </div>
+              <span class="project-status-tag status-live">Live Product</span>
+            </div>
+
+            <div class="project-content-grid">
+              <div class="project-summary">
+                <h3 class="project-heading">VendorGhosted</h3>
+                <p class="project-role">Automated invoice recovery and communication workflows for independent contractors.</p>
+                <p class="project-narrative">
+                  Freelancers and small agencies lose thousands of dollars simply because manual payment follow-up is awkward and time-consuming. VendorGhosted authenticates through the user's Gmail OAuth to draft and dispatch escalating, tone-calibrated invoice reminders directly from their real email account.
+                </p>
+                <div class="project-action-wrap">
+                  <a href="https://vendorghosted.com" target="_blank" rel="noopener noreferrer" class="link-external" id="vendorghosted-link">
+                    <span>Visit vendorghosted.com</span>
+                    <svg width="12" height="12" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+                      <path d="M2.5 11.5L11.5 2.5M11.5 2.5H5.5M11.5 2.5V8.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+
+              <div class="project-specs">
+                <div class="spec-group">
+                  <span class="spec-title">Core Capabilities</span>
+                  <ul class="spec-items">
+                    <li>Personal Gmail OAuth (sends from user's authentic domain)</li>
+                    <li>Tone-matched draft generation calibrated to relationship</li>
+                    <li>Configurable escalation timelines and automatic stop-on-reply</li>
+                    <li>Durable delayed task execution with BullMQ and Redis</li>
+                  </ul>
+                </div>
+                <div class="spec-group">
+                  <span class="spec-title">Stack</span>
+                  <div class="tech-labels">
+                    <span class="tech-label">Next.js</span>
+                    <span class="tech-label">Gmail API</span>
+                    <span class="tech-label">BullMQ</span>
+                    <span class="tech-label">Redis</span>
+                    <span class="tech-label">TypeScript</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- 04 Beamm / Paytouch -->
+          <article class="project-entry" id="project-nestor">
+            <div class="project-header">
+              <div class="project-id-group">
+                <span class="project-index">04</span>
+                <span class="project-domain">Point of Sale &amp; Enterprise</span>
+              </div>
+              <span class="project-status-tag status-acquired">Acquired</span>
+            </div>
+
+            <div class="project-content-grid">
+              <div class="project-summary">
+                <h3 class="project-heading">Beamm <span class="project-subheading">/ Paytouch</span></h3>
+                <p class="project-role">End-to-end cloud point of sale and hospitality management ecosystem.</p>
+                <p class="project-narrative">
+                  Architected as Beamm, this system was developed into a comprehensive restaurant POS encompassing front-of-house table service, digital kitchen display systems, inventory intelligence, multi-location analytics, and loyalty programs. The platform was subsequently acquired by Paytouch.
+                </p>
+                <div class="project-action-wrap">
+                  <a href="https://trynestor.com" target="_blank" rel="noopener noreferrer" class="link-external" id="nestor-link">
+                    <span>Visit trynestor.com</span>
+                    <svg width="12" height="12" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+                      <path d="M2.5 11.5L11.5 2.5M11.5 2.5H5.5M11.5 2.5V8.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+
+              <div class="project-specs">
+                <div class="spec-group">
+                  <span class="spec-title">Core Capabilities</span>
+                  <ul class="spec-items">
+                    <li>High-throughput multi-terminal cloud POS</li>
+                    <li>Real-time table mapping and kitchen dispatch</li>
+                    <li>Cross-unit recipe cost accounting and inventory sync</li>
+                    <li>Loyalty program infrastructure and patron CRM</li>
+                  </ul>
+                </div>
+                <div class="spec-group">
+                  <span class="spec-title">Stack</span>
+                  <div class="tech-labels">
+                    <span class="tech-label">React</span>
+                    <span class="tech-label">Node.js</span>
+                    <span class="tech-label">PostgreSQL</span>
+                    <span class="tech-label">WebSockets</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- 05 AskZoe -->
+          <article class="project-entry" id="project-askzoe">
+            <div class="project-header">
+              <div class="project-id-group">
+                <span class="project-index">05</span>
+                <span class="project-domain">Clean Energy &amp; Mobility</span>
+              </div>
+              <span class="project-status-tag status-live">Live Product</span>
+            </div>
+
+            <div class="project-content-grid">
+              <div class="project-summary">
+                <h3 class="project-heading">AskZoe</h3>
+                <p class="project-role">EV discovery, incentive matching, and charging economics engine for Canadians.</p>
+                <p class="project-narrative">
+                  Buying an electric vehicle in Canada requires navigating fragmented provincial rebate programs, cold-weather efficiency degradation, and variable home charging costs. AskZoe indexes 126+ electric vehicle models across 36 manufacturers, delivering accurate real-world calculations tailored to Canadian driving realities. Powered by Kord Mobility.
+                </p>
+                <div class="project-action-wrap">
+                  <a href="https://askzoe.ca" target="_blank" rel="noopener noreferrer" class="link-external" id="askzoe-link">
+                    <span>Visit askzoe.ca</span>
+                    <svg width="12" height="12" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+                      <path d="M2.5 11.5L11.5 2.5M11.5 2.5H5.5M11.5 2.5V8.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+
+              <div class="project-specs">
+                <div class="spec-group">
+                  <span class="spec-title">Core Capabilities</span>
+                  <ul class="spec-items">
+                    <li>Comprehensive database of 126 EV models and trims</li>
+                    <li>Sub-zero winter range and charging speed calculations</li>
+                    <li>Federal and provincial incentive lookup engine</li>
+                    <li>Side-by-side cost per kilometer comparison model</li>
+                  </ul>
+                </div>
+                <div class="spec-group">
+                  <span class="spec-title">Stack</span>
+                  <div class="tech-labels">
+                    <span class="tech-label">Next.js</span>
+                    <span class="tech-label">TypeScript</span>
+                    <span class="tech-label">Data Pipelines</span>
+                    <span class="tech-label">Kord Mobility</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- 06 Madeproof -->
+          <article class="project-entry" id="project-madeproof">
+            <div class="project-header">
+              <div class="project-id-group">
+                <span class="project-index">06</span>
+                <span class="project-domain">Regulatory Compliance</span>
+              </div>
+              <span class="project-status-tag status-dev">In Development</span>
+            </div>
+
+            <div class="project-content-grid">
+              <div class="project-summary">
+                <h3 class="project-heading">Madeproof</h3>
+                <p class="project-role">FTC "Made in USA" substantiation and component traceability platform.</p>
+                <p class="project-narrative">
+                  The Federal Trade Commission strictly enforces domestic manufacturing claims. Madeproof gives manufacturers a structured system to trace bill-of-materials components back to verified supplier affidavits, creating a tamper-evident audit ledger that substantiates marketing claims before regulatory scrutiny occurs.
+                </p>
+                <div class="project-action-wrap">
+                  <span class="status-note">Private deployment underway</span>
+                </div>
+              </div>
+
+              <div class="project-specs">
+                <div class="spec-group">
+                  <span class="spec-title">Core Capabilities</span>
+                  <ul class="spec-items">
+                    <li>Bill of materials (BOM) multi-tier component mapping</li>
+                    <li>Supplier affidavit collection and expiry tracking</li>
+                    <li>Cryptographically signed SHA-256 audit packet exports</li>
+                    <li>SKU-level compliance status inheritance</li>
+                  </ul>
+                </div>
+                <div class="spec-group">
+                  <span class="spec-title">Stack</span>
+                  <div class="tech-labels">
+                    <span class="tech-label">Next.js</span>
+                    <span class="tech-label">Prisma</span>
+                    <span class="tech-label">PostgreSQL</span>
+                    <span class="tech-label">Cryptography</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Studio Approach -->
+    <section class="section approach-section" id="approach" aria-labelledby="approach-title">
+      <div class="container">
+
+        <div class="section-head">
+          <div class="section-meta">
+            <span class="section-num">02</span>
+            <span class="section-label">Studio Principles</span>
+          </div>
+          <h2 id="approach-title" class="section-title">How We Build</h2>
+          <p class="section-desc">
+            We operate as an independent product workshop. We deliberately avoid venture-backed scale traps, prioritizing sustainable software with real unit economics.
+          </p>
+        </div>
+
+        <div class="principles-grid">
+          
+          <div class="principle-card">
+            <div class="principle-num">01</div>
+            <h3 class="principle-name">Scope Discipline</h3>
+            <p class="principle-body">
+              Every product addresses a single, well-defined operational bottleneck. We do not build bloated "all-in-one" suites that do ten things poorly. We solve one problem completely.
+            </p>
+          </div>
+
+          <div class="principle-card">
+            <div class="principle-num">02</div>
+            <h3 class="principle-name">Operator Perspective</h3>
+            <p class="principle-body">
+              We design software for the actual operator — the shift manager on an iPad, the merchant preparing catering runs, or the contractor tracking down invoices. Practicality always takes precedence over vanity.
+            </p>
+          </div>
+
+          <div class="principle-card">
+            <div class="principle-num">03</div>
+            <h3 class="principle-name">Technical Longevity</h3>
+            <p class="principle-body">
+              We write concise, readable code on battle-tested foundations: modern TypeScript, resilient relational databases, and decoupled services. Minimal operational overhead, maximum uptime.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Architecture & Stack -->
+    <section class="section stack-section" id="stack" aria-labelledby="stack-title">
+      <div class="container">
+
+        <div class="section-head">
+          <div class="section-meta">
+            <span class="section-num">03</span>
+            <span class="section-label">Technical Foundation</span>
+          </div>
+          <h2 id="stack-title" class="section-title">Architecture &amp; Tooling</h2>
+          <p class="section-desc">
+            We use a modern, disciplined toolset chosen for performance, reliability, and maintainability.
+          </p>
+        </div>
+
+        <div class="stack-table" role="table" aria-label="Technology stack details">
+          
+          <div class="stack-row" role="row">
+            <div class="stack-cell stack-cell--category" role="rowheader">Application Core</div>
+            <div class="stack-cell stack-cell--tech" role="cell">Next.js / React / TypeScript</div>
+            <div class="stack-cell stack-cell--desc" role="cell">Predictable, type-safe full-stack application development with fast edge and SSR capabilities.</div>
+          </div>
+
+          <div class="stack-row" role="row">
+            <div class="stack-cell stack-cell--category" role="rowheader">Data Layer</div>
+            <div class="stack-cell stack-cell--tech" role="cell">PostgreSQL / Drizzle ORM / Prisma</div>
+            <div class="stack-cell stack-cell--desc" role="cell">Relational integrity, strict schema validations, and declarative query construction.</div>
+          </div>
+
+          <div class="stack-row" role="row">
+            <div class="stack-cell stack-cell--category" role="rowheader">Async &amp; Queues</div>
+            <div class="stack-cell stack-cell--tech" role="cell">BullMQ / Redis</div>
+            <div class="stack-cell stack-cell--desc" role="cell">Durable background jobs, distributed rate-limiting, and resilient scheduled dispatches.</div>
+          </div>
+
+          <div class="stack-row" role="row">
+            <div class="stack-cell stack-cell--category" role="rowheader">Integrations &amp; Auth</div>
+            <div class="stack-cell stack-cell--tech" role="cell">Shopify API / Stripe / Clerk / OAuth</div>
+            <div class="stack-cell stack-cell--desc" role="cell">Hardened multi-tenant access control and certified merchant billing pipelines.</div>
+          </div>
+
+          <div class="stack-row" role="row">
+            <div class="stack-cell stack-cell--category" role="rowheader">Edge Infrastructure</div>
+            <div class="stack-cell stack-cell--tech" role="cell">Cloudflare Pages &amp; Workers</div>
+            <div class="stack-cell stack-cell--desc" role="cell">Globally distributed delivery, zero-maintenance static serving, and edge security headers.</div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Inquiries / Contact -->
+    <section class="section contact-section" id="contact" aria-labelledby="contact-title">
+      <div class="container">
+        
+        <div class="contact-frame">
+          <div class="contact-frame-inner">
+            
+            <div class="contact-intro">
+              <div class="section-meta">
+                <span class="section-num">04</span>
+                <span class="section-label">Engagements</span>
+              </div>
+              <h2 id="contact-title" class="contact-title">Start a Conversation</h2>
+              <p class="contact-lede">
+                Xiimo takes on select technical advisory roles and joint venture builds in underserved vertical industries. If you have deep domain insight into an operational challenge, let's talk.
+              </p>
+            </div>
+
+            <div class="contact-card">
+              <div class="contact-card-top">
+                <span class="card-label">Direct Communication</span>
+                <button class="copy-btn" id="copyEmailBtn" aria-label="Copy email address to clipboard">
+                  <span id="copyBtnText">Copy Email</span>
+                  <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                    <rect x="4" y="4" width="9" height="9" rx="1.5" stroke="currentColor" stroke-width="1.5"/>
+                    <path d="M2.5 11.5v-7A1.5 1.5 0 014 3h7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                  </svg>
+                </button>
+              </div>
+
+              <a href="mailto:hello@xiimo.com" class="direct-email-link" id="mainEmailLink">
+                hello@xiimo.com
+              </a>
+
+              <div class="contact-metadata">
+                <div class="meta-row">
+                  <span class="meta-k">Location</span>
+                  <span class="meta-v">Canada (EST / PST Coverage)</span>
+                </div>
+                <div class="meta-row">
+                  <span class="meta-k">Engagements</span>
+                  <span class="meta-v">Advisory · Co-Founding · Studio Builds</span>
+                </div>
+                <div class="meta-row">
+                  <span class="meta-k">Response Time</span>
+                  <span class="meta-v">Within 24 business hours</span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container footer-layout">
+      
+      <div class="footer-brand-col">
+        <div class="footer-logo">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M4 4L12 12M12 12L20 20M12 12L20 4M12 12L4 20" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+          </svg>
+          <span class="footer-brand-name">xiimo</span>
+        </div>
+        <p class="footer-summary">
+          Independent software studio. Built around clarity, operational utility, and long-term craft.
+        </p>
+      </div>
+
+      <div class="footer-nav-col">
+        <span class="footer-col-title">Portfolio</span>
+        <ul class="footer-link-list">
+          <li><a href="https://tableline.xiimo.com" target="_blank" rel="noopener">Tableline</a></li>
+          <li><a href="https://cateringhero.xiimo.com" target="_blank" rel="noopener">CateringHero</a></li>
+          <li><a href="https://vendorghosted.com" target="_blank" rel="noopener">VendorGhosted</a></li>
+          <li><a href="https://trynestor.com" target="_blank" rel="noopener">Beamm / Paytouch</a></li>
+          <li><a href="https://askzoe.ca" target="_blank" rel="noopener">AskZoe</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-nav-col">
+        <span class="footer-col-title">Navigation</span>
+        <ul class="footer-link-list">
+          <li><a href="#work">Selected Work</a></li>
+          <li><a href="#approach">Principles</a></li>
+          <li><a href="#stack">Architecture</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-bottom-bar">
+        <div class="copyright">
+          &copy; <span id="currentYear">2026</span> Xiimo. All rights reserved.
+        </div>
+        <div class="footer-meta">
+          <span>Hosted on Cloudflare Pages</span>
+          <span class="dot-sep">&middot;</span>
+          <a href="#top" class="back-to-top">Back to top &uarr;</a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <script src="/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Page Not Found — Xiimo</title>
+  <meta name="robots" content="noindex" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/style.css" />
+  <style>
+    .error-wrap {
+      min-height: 80vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 2rem;
+    }
+    .error-code {
+      font-family: var(--font-mono);
+      font-size: 1rem;
+      color: var(--accent-mint);
+      letter-spacing: 0.1em;
+      margin-bottom: 1.5rem;
+    }
+    .error-title {
+      font-size: clamp(2rem, 4vw, 3rem);
+      font-weight: 800;
+      letter-spacing: -0.035em;
+      margin-bottom: 1rem;
+    }
+    .error-desc {
+      color: var(--text-secondary);
+      max-width: 440px;
+      margin-bottom: 2rem;
+      line-height: 1.6;
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner container">
+      <a href="/" class="brand" aria-label="Xiimo home">
+        <span class="brand-mark" aria-hidden="true">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+            <path d="M4 4L12 12M12 12L20 20M12 12L20 4M12 12L4 20" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+          </svg>
+        </span>
+        <span class="brand-name">xiimo</span>
+      </a>
+      <a href="/" class="nav-item">Return Home &rarr;</a>
+    </div>
+  </header>
+
+  <main class="container error-wrap">
+    <div class="error-code">// 404_NOT_FOUND</div>
+    <h1 class="error-title">Page Not Found</h1>
+    <p class="error-desc">The path you requested does not exist or has been relocated to another route.</p>
+    <a href="/" class="btn btn-primary">Return to Studio Home</a>
+  </main>
+</body>
+</html>
