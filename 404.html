@@ -8,36 +8,40 @@
   <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Outfit:wght@400;600;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="/style.css" />
   <style>
     .error-wrap {
-      min-height: 80vh;
+      min-height: 75vh;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
       text-align: center;
-      padding: 2rem;
+      padding: 2.5rem;
     }
     .error-code {
       font-family: var(--font-mono);
-      font-size: 1rem;
-      color: var(--accent-mint);
+      font-size: 0.85rem;
+      color: var(--c-forest-muted);
       letter-spacing: 0.1em;
-      margin-bottom: 1.5rem;
+      margin-bottom: 1.25rem;
+      text-transform: uppercase;
     }
     .error-title {
-      font-size: clamp(2rem, 4vw, 3rem);
+      font-family: var(--font-brand);
+      font-size: clamp(2.25rem, 4.5vw, 3.5rem);
       font-weight: 800;
-      letter-spacing: -0.035em;
+      letter-spacing: -0.04em;
+      color: var(--c-forest-deep);
       margin-bottom: 1rem;
     }
     .error-desc {
-      color: var(--text-secondary);
-      max-width: 440px;
-      margin-bottom: 2rem;
-      line-height: 1.6;
+      color: var(--c-text-secondary);
+      max-width: 460px;
+      margin-bottom: 2.25rem;
+      line-height: 1.65;
+      font-size: 1.05rem;
     }
   </style>
 </head>
@@ -45,22 +49,23 @@
   <header class="site-header">
     <div class="header-inner container">
       <a href="/" class="brand" aria-label="Xiimo home">
-        <span class="brand-mark" aria-hidden="true">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
-            <path d="M4 4L12 12M12 12L20 20M12 12L20 4M12 12L4 20" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+        <span class="brand-monogram">
+          <svg width="24" height="24" viewBox="0 0 28 28" fill="none">
+            <rect width="28" height="28" rx="6" fill="#0c251b"/>
+            <path d="M7 7L14 14M14 14L21 21M14 14L21 7M14 14L7 21" stroke="#9ee3be" stroke-width="2.5" stroke-linecap="round"/>
           </svg>
         </span>
-        <span class="brand-name">xiimo</span>
+        <span class="brand-wordmark">xiimo</span>
       </a>
-      <a href="/" class="nav-item">Return Home &rarr;</a>
+      <a href="/" class="nav-cta">&larr; Return Home</a>
     </div>
   </header>
 
   <main class="container error-wrap">
-    <div class="error-code">// 404_NOT_FOUND</div>
+    <div class="error-code">404 // Route Not Located</div>
     <h1 class="error-title">Page Not Found</h1>
-    <p class="error-desc">The path you requested does not exist or has been relocated to another route.</p>
-    <a href="/" class="btn btn-primary">Return to Studio Home</a>
+    <p class="error-desc">The requested resource is unavailable or has moved to an updated route.</p>
+    <a href="/" class="btn btn-dark">Return to Studio Overview</a>
   </main>
 </body>
 </html>

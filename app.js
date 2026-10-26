@@ -47,16 +47,15 @@ document.addEventListener('DOMContentLoaded', () => {
       try {
         await navigator.clipboard.writeText(emailAddress);
         copyBtnText.textContent = 'Copied!';
-        copyBtn.style.color = '#c5f2dc';
+        copyBtn.style.backgroundColor = '#ffffff';
 
         if (timeoutId) clearTimeout(timeoutId);
 
         timeoutId = setTimeout(() => {
-          copyBtnText.textContent = 'Copy Email';
-          copyBtn.style.color = '';
+          copyBtnText.textContent = 'Copy';
+          copyBtn.style.backgroundColor = '';
         }, 2000);
       } catch (err) {
-        // Fallback: select link
         window.location.href = `mailto:${emailAddress}`;
       }
     });
@@ -68,16 +67,18 @@ document.addEventListener('DOMContentLoaded', () => {
     yearEl.textContent = new Date().getFullYear();
   }
 
-  // 4. Subtle Header State on Scroll
+  // 4. Subtle Header State on Scroll (Matching the light mint/sage theme)
   const header = document.querySelector('.site-header');
   if (header) {
     const updateHeader = () => {
       if (window.scrollY > 20) {
-        header.style.backgroundColor = 'rgba(7, 21, 15, 0.96)';
-        header.style.borderColor = 'rgba(159, 227, 193, 0.16)';
+        header.style.backgroundColor = 'rgba(244, 250, 246, 0.96)';
+        header.style.borderColor = 'rgba(12, 37, 27, 0.12)';
+        header.style.boxShadow = '0 4px 16px rgba(12, 37, 27, 0.04)';
       } else {
-        header.style.backgroundColor = 'rgba(7, 21, 15, 0.88)';
-        header.style.borderColor = 'rgba(159, 227, 193, 0.11)';
+        header.style.backgroundColor = 'rgba(210, 242, 225, 0.88)';
+        header.style.borderColor = 'rgba(12, 37, 27, 0.08)';
+        header.style.boxShadow = 'none';
       }
     };
 
