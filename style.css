@@ -1,8 +1,7 @@
 /* ==========================================================================
    XIIMO — Modern Software Studio
    Brand Identity: Fresh Luminous Mint (#9ee3be / #bdecd4) & Deep Forest Racing Green (#0c251b)
-   Inspired by contemporary high-end brand atelier / leadership design systems.
-   No AI slop. Crisp geometry, authentic ventures, editorial typography.
+   Clean, restrained editorial layout. Zero AI pills, zero speculative tags.
    ========================================================================== */
 
 :root {
@@ -27,7 +26,7 @@
   --c-text-secondary: #2f4e40;
   --c-text-muted: #5a776a;
   --c-border-subtle: rgba(12, 37, 27, 0.08);
-  --c-border-medium: rgba(12, 37, 27, 0.16);
+  --c-border-medium: rgba(12, 37, 27, 0.14);
 
   /* Typography */
   --font-brand: 'Outfit', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
@@ -40,7 +39,7 @@
   --radius-xs: 3px;
   --radius-sm: 6px;
   --radius-md: 12px;
-  --radius-lg: 20px;
+  --radius-lg: 18px;
   --transition-fast: 150ms cubic-bezier(0.16, 1, 0.3, 1);
   --transition-base: 240ms cubic-bezier(0.16, 1, 0.3, 1);
 }
@@ -245,7 +244,7 @@ button {
 }
 
 /* ==========================================================================
-   Hero Canvas: Luminous Mint & Forest Green Identity Layout
+   Hero Canvas: Luminous Mint & Forest Green
    ========================================================================== */
 .hero-canvas {
   background: linear-gradient(168deg, #d2f2e1 0%, #b8ebd1 45%, #a1e4c2 100%);
@@ -256,13 +255,12 @@ button {
   overflow: hidden;
 }
 
-/* Subtle architectural diagonal texture */
 .hero-canvas::after {
   content: "";
   position: absolute;
   inset: 0;
   background-image: 
-    radial-gradient(circle at 85% 15%, rgba(255, 255, 255, 0.4) 0%, transparent 60%),
+    radial-gradient(circle at 85% 15%, rgba(255, 255, 255, 0.45) 0%, transparent 60%),
     linear-gradient(to right, rgba(12, 37, 27, 0.03) 1px, transparent 1px);
   background-size: 100% 100%, 72px 72px;
   pointer-events: none;
@@ -270,7 +268,7 @@ button {
 
 .hero-container {
   display: grid;
-  grid-template-columns: 1.2fr 0.8fr;
+  grid-template-columns: 1.25fr 0.75fr;
   gap: clamp(2.5rem, 5vw, 4.5rem);
   align-items: center;
   position: relative;
@@ -312,28 +310,8 @@ button {
   color: var(--c-forest-muted);
   line-height: 1.65;
   max-width: 580px;
-  margin-bottom: 2rem;
-  font-weight: 450;
-}
-
-/* Tags matching the visual in screenshot (LEADERSHIP, STRATEGY, OPERATIONS) */
-.hero-tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.6rem;
   margin-bottom: 2.25rem;
-}
-
-.hero-tag {
-  font-family: var(--font-brand);
-  font-size: 0.72rem;
-  font-weight: 800;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: var(--c-mint-accent);
-  background-color: var(--c-forest-deep);
-  padding: 0.38rem 0.85rem;
-  border-radius: var(--radius-xs);
+  font-weight: 450;
 }
 
 .hero-actions {
@@ -379,7 +357,7 @@ button {
   background-color: rgba(12, 37, 27, 0.08);
 }
 
-/* Master Brand Identity Badge (Directly referencing the reference image badge) */
+/* Master Brand Identity Tile (Restrained, high-craft brand specimen) */
 .hero-brand-panel {
   display: flex;
   justify-content: flex-end;
@@ -387,11 +365,11 @@ button {
 
 .identity-badge {
   width: 100%;
-  max-width: 400px;
+  max-width: 380px;
   background-color: var(--c-forest-deep);
   color: #ffffff;
   border-radius: var(--radius-lg);
-  padding: clamp(1.75rem, 4vw, 2.5rem);
+  padding: clamp(2rem, 4vw, 2.75rem);
   box-shadow: 0 24px 50px rgba(12, 37, 27, 0.22);
   border: 1px solid rgba(158, 227, 190, 0.2);
 }
@@ -408,27 +386,13 @@ button {
   align-items: center;
 }
 
-.badge-title-group {
-  display: flex;
-  flex-direction: column;
-}
-
 .badge-name {
   font-family: var(--font-brand);
-  font-size: 1.6rem;
+  font-size: 1.75rem;
   font-weight: 800;
   letter-spacing: -0.04em;
   line-height: 1;
   color: var(--c-mint-accent);
-}
-
-.badge-sub {
-  font-family: var(--font-mono);
-  font-size: 0.7rem;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-  color: var(--c-mint-border);
-  margin-top: 0.2rem;
 }
 
 .badge-body {
@@ -436,81 +400,39 @@ button {
 }
 
 .badge-statement {
-  font-size: 0.95rem;
+  font-size: 0.98rem;
   line-height: 1.65;
   color: #daf5e7;
   font-weight: 400;
 }
 
-.badge-stats {
+.badge-footer-meta {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding-top: 1.5rem;
   border-top: 1px solid rgba(158, 227, 190, 0.2);
-}
-
-.stat-col {
-  display: flex;
-  flex-direction: column;
-}
-
-.stat-value {
-  font-family: var(--font-brand);
-  font-size: 1.5rem;
-  font-weight: 900;
-  color: var(--c-mint-accent);
-  line-height: 1;
-}
-
-.stat-name {
   font-family: var(--font-mono);
-  font-size: 0.68rem;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
+  font-size: 0.75rem;
   color: var(--c-mint-border);
-  margin-top: 0.35rem;
-}
-
-.stat-divider {
-  width: 1px;
-  height: 28px;
-  background-color: rgba(158, 227, 190, 0.2);
 }
 
 /* ==========================================================================
-   Section Leads (Consistent Editorial Typography)
+   Section Lead Typography (Clean, confident, zero numbered prefix)
    ========================================================================== */
 .section-lead {
   max-width: 740px;
   margin-bottom: clamp(2.5rem, 5vw, 4rem);
 }
 
-.lead-eyebrow {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.75rem;
-  font-family: var(--font-mono);
-  font-size: 0.78rem;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: var(--c-forest-muted);
-  margin-bottom: 0.85rem;
-}
-
-.eyebrow-num {
-  font-weight: 700;
-  color: var(--c-forest-deep);
-}
-
 .lead-title {
   font-family: var(--font-brand);
-  font-size: clamp(2rem, 4vw, 3rem);
+  font-size: clamp(2.25rem, 4.5vw, 3.25rem);
   font-weight: 800;
   letter-spacing: -0.035em;
   line-height: 1.15;
   color: var(--c-forest-deep);
-  margin-bottom: 0.85rem;
+  margin-bottom: 0.75rem;
 }
 
 .lead-desc {
@@ -520,7 +442,7 @@ button {
 }
 
 /* ==========================================================================
-   Ventures Section (Selected Work)
+   Selected Work (Editorial Presentation, Zero Pills)
    ========================================================================== */
 .ventures-section {
   padding-block: clamp(4.5rem, 8vw, 7rem);
@@ -531,90 +453,52 @@ button {
 .ventures-grid {
   display: flex;
   flex-direction: column;
-  gap: 2.25rem;
+  gap: 2rem;
 }
 
 .venture-card {
   background-color: var(--c-bg-card);
   border: 1px solid var(--c-border-medium);
   border-radius: var(--radius-md);
-  padding: clamp(1.75rem, 3.5vw, 2.75rem);
-  box-shadow: 0 4px 18px rgba(12, 37, 27, 0.04);
+  padding: clamp(2rem, 3.5vw, 2.75rem);
+  box-shadow: 0 4px 18px rgba(12, 37, 27, 0.03);
   transition: transform var(--transition-base), box-shadow var(--transition-base), border-color var(--transition-base);
 }
 
 .venture-card:hover {
   transform: translateY(-2px);
-  box-shadow: 0 12px 32px rgba(12, 37, 27, 0.08);
+  box-shadow: 0 12px 32px rgba(12, 37, 27, 0.07);
   border-color: var(--c-forest-muted);
 }
 
-.venture-meta-bar {
+.venture-heading-row {
   display: flex;
-  align-items: center;
-  gap: 1rem;
-  padding-bottom: 1.25rem;
-  margin-bottom: 1.5rem;
-  border-bottom: 1px solid var(--c-border-subtle);
-}
-
-.venture-index {
-  font-family: var(--font-mono);
-  font-size: 0.85rem;
-  font-weight: 700;
-  color: var(--c-forest-deep);
-}
-
-.venture-sector {
-  font-family: var(--font-mono);
-  font-size: 0.75rem;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-  color: var(--c-forest-muted);
-}
-
-.venture-pill {
-  margin-left: auto;
-  font-family: var(--font-mono);
-  font-size: 0.72rem;
-  font-weight: 600;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  padding: 0.25rem 0.65rem;
-  border-radius: var(--radius-xs);
-}
-
-.pill-live {
-  background-color: var(--c-mint-surface);
-  color: var(--c-forest-deep);
-  border: 1px solid var(--c-mint-border);
-}
-
-.pill-acquired {
-  background-color: #e5ece8;
-  color: var(--c-forest-dark);
-  border: 1px solid #c2d4cb;
-}
-
-.pill-dev {
-  background-color: #fdf5e6;
-  color: #7d5b12;
-  border: 1px solid #ebd49f;
+  align-items: baseline;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-bottom: 0.5rem;
 }
 
 .venture-name {
   font-family: var(--font-brand);
-  font-size: clamp(1.85rem, 3vw, 2.4rem);
+  font-size: clamp(1.85rem, 3vw, 2.35rem);
   font-weight: 800;
   letter-spacing: -0.03em;
   color: var(--c-forest-deep);
-  margin-bottom: 0.35rem;
 }
 
 .venture-subname {
-  font-size: 1.15rem;
+  font-size: 1.25rem;
   font-weight: 500;
   color: var(--c-text-muted);
+}
+
+.venture-category {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  color: var(--c-forest-muted);
+  letter-spacing: 0.04em;
 }
 
 .venture-tagline {
@@ -628,49 +512,8 @@ button {
   font-size: 0.98rem;
   color: var(--c-text-secondary);
   line-height: 1.7;
-  max-width: 860px;
+  max-width: 880px;
   margin-bottom: 1.75rem;
-}
-
-.venture-specs-box {
-  background-color: var(--c-bg-card-alt);
-  border: 1px solid var(--c-border-subtle);
-  border-radius: var(--radius-sm);
-  padding: 1.25rem 1.5rem;
-  margin-bottom: 1.75rem;
-}
-
-.spec-label {
-  font-family: var(--font-mono);
-  font-size: 0.72rem;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-  color: var(--c-forest-muted);
-  margin-bottom: 0.65rem;
-  font-weight: 600;
-}
-
-.spec-bullets {
-  list-style: none;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 0.5rem 2rem;
-}
-
-.spec-bullets li {
-  font-size: 0.88rem;
-  color: var(--c-text-secondary);
-  position: relative;
-  padding-left: 1rem;
-  line-height: 1.5;
-}
-
-.spec-bullets li::before {
-  content: "—";
-  position: absolute;
-  left: 0;
-  color: var(--c-forest-deep);
-  font-weight: 700;
 }
 
 .venture-footer {
@@ -683,21 +526,11 @@ button {
   border-top: 1px solid var(--c-border-subtle);
 }
 
-.tech-row {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.45rem;
-}
-
-.tech-tag {
+.venture-stack {
   font-family: var(--font-mono);
-  font-size: 0.76rem;
-  color: var(--c-forest-deep);
-  background-color: #eef7f2;
-  border: 1px solid var(--c-border-medium);
-  padding: 0.2rem 0.55rem;
-  border-radius: var(--radius-xs);
-  font-weight: 500;
+  font-size: 0.8rem;
+  color: var(--c-text-muted);
+  letter-spacing: -0.01em;
 }
 
 .venture-link {
@@ -705,7 +538,7 @@ button {
   align-items: center;
   gap: 0.45rem;
   font-family: var(--font-brand);
-  font-size: 0.88rem;
+  font-size: 0.9rem;
   font-weight: 700;
   color: var(--c-forest-deep);
   border-bottom: 1.5px solid var(--c-forest-deep);
@@ -717,14 +550,14 @@ button {
   border-color: var(--c-forest-surface);
 }
 
-.venture-note {
+.venture-inline-note {
   font-family: var(--font-mono);
   font-size: 0.8rem;
   color: var(--c-text-muted);
 }
 
 /* ==========================================================================
-   Philosophy Section
+   Philosophy / Approach Section
    ========================================================================== */
 .philosophy-section {
   padding-block: clamp(4.5rem, 8vw, 7rem);
@@ -746,25 +579,13 @@ button {
   box-shadow: 0 4px 14px rgba(12, 37, 27, 0.03);
 }
 
-.principle-header {
-  margin-bottom: 1.25rem;
-}
-
-.principle-num {
-  font-family: var(--font-mono);
-  font-size: 0.85rem;
-  font-weight: 700;
-  color: var(--c-forest-deep);
-  display: block;
-  margin-bottom: 0.5rem;
-}
-
 .principle-title {
   font-family: var(--font-brand);
   font-size: 1.35rem;
   font-weight: 800;
   letter-spacing: -0.02em;
   color: var(--c-forest-deep);
+  margin-bottom: 0.85rem;
 }
 
 .principle-text {
@@ -774,7 +595,7 @@ button {
 }
 
 /* ==========================================================================
-   Architecture Table
+   Architecture & Tooling Table
    ========================================================================== */
 .architecture-section {
   padding-block: clamp(4.5rem, 8vw, 7rem);
@@ -825,7 +646,7 @@ button {
 }
 
 /* ==========================================================================
-   Inquiries Section (Deep Forest Green Inverted Statement)
+   Inquiries Section (Deep Forest Green Inverted Showcase)
    ========================================================================== */
 .inquiries-section {
   padding-block: clamp(4.5rem, 8vw, 7.5rem);
@@ -843,15 +664,6 @@ button {
   align-items: center;
   box-shadow: 0 24px 50px rgba(12, 37, 27, 0.2);
   border: 1px solid rgba(158, 227, 190, 0.15);
-}
-
-.inquiries-eyebrow {
-  font-family: var(--font-mono);
-  font-size: 0.78rem;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: var(--c-mint-border);
-  margin-bottom: 1rem;
 }
 
 .inquiries-title {
@@ -1059,10 +871,6 @@ button {
 
   .hero-brand-panel {
     justify-content: flex-start;
-  }
-
-  .spec-bullets {
-    grid-template-columns: 1fr;
   }
 
   .principles-grid {
