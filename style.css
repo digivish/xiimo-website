@@ -519,18 +519,9 @@ button {
 .venture-footer {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 1.25rem;
+  justify-content: flex-start;
   padding-top: 1.25rem;
   border-top: 1px solid var(--c-border-subtle);
-}
-
-.venture-stack {
-  font-family: var(--font-mono);
-  font-size: 0.8rem;
-  color: var(--c-text-muted);
-  letter-spacing: -0.01em;
 }
 
 .venture-link {
