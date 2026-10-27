@@ -586,57 +586,6 @@ button {
 }
 
 /* ==========================================================================
-   Architecture & Tooling Table
-   ========================================================================== */
-.architecture-section {
-  padding-block: clamp(4.5rem, 8vw, 7rem);
-  background-color: var(--c-bg-page);
-  border-bottom: 1px solid var(--c-border-subtle);
-}
-
-.arch-table {
-  background-color: var(--c-bg-card);
-  border: 1px solid var(--c-border-medium);
-  border-radius: var(--radius-md);
-  overflow: hidden;
-  box-shadow: 0 4px 16px rgba(12, 37, 27, 0.04);
-}
-
-.arch-row {
-  display: grid;
-  grid-template-columns: 220px 280px 1fr;
-  padding: 1.35rem 2rem;
-  align-items: baseline;
-  border-bottom: 1px solid var(--c-border-subtle);
-}
-
-.arch-row:last-child {
-  border-bottom: none;
-}
-
-.arch-cell-cat {
-  font-family: var(--font-mono);
-  font-size: 0.8rem;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-  color: var(--c-forest-deep);
-  font-weight: 600;
-}
-
-.arch-cell-tech {
-  font-family: var(--font-brand);
-  font-size: 1rem;
-  font-weight: 700;
-  color: var(--c-forest-deep);
-}
-
-.arch-cell-desc {
-  font-size: 0.925rem;
-  color: var(--c-text-secondary);
-  line-height: 1.55;
-}
-
-/* ==========================================================================
    Inquiries Section (Deep Forest Green Inverted Showcase)
    ========================================================================== */
 .inquiries-section {
@@ -868,10 +817,6 @@ button {
     grid-template-columns: 1fr;
   }
 
-  .arch-row {
-    grid-template-columns: 180px 220px 1fr;
-  }
-
   .inquiries-card {
     grid-template-columns: 1fr;
     gap: 2.5rem;
@@ -885,12 +830,6 @@ button {
 
   .mobile-toggle {
     display: flex;
-  }
-
-  .arch-row {
-    grid-template-columns: 1fr;
-    gap: 0.35rem;
-    padding: 1.25rem 1.25rem;
   }
 
   .footer-content {
