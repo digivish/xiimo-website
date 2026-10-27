@@ -534,10 +534,18 @@ button {
   box-shadow: 0 4px 10px rgba(12, 37, 27, 0.15);
 }
 
+.venture-action-btn svg {
+  transition: transform 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
 .venture-action-btn:hover {
   background-color: #174230;
   color: #9ee3be;
   transform: scale(1.08);
+}
+
+.venture-action-btn:hover svg {
+  transform: translateX(1.5px);
 }
 
 /* ==========================================================================
