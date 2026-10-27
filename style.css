@@ -368,6 +368,7 @@ button {
 
 .section-lead {
   max-width: 740px;
+  margin-bottom: clamp(2.5rem, 5vw, 3.5rem);
 }
 
 .lead-title {
@@ -524,9 +525,13 @@ button {
    Philosophy / Approach Section
    ========================================================================== */
 .philosophy-section {
-  padding-block: clamp(4.5rem, 8vw, 7rem);
+  padding-block: clamp(5rem, 8.5vw, 7.5rem);
   background-color: #ebf6f0;
   border-bottom: 1px solid var(--c-border-subtle);
+}
+
+.philosophy-section .section-lead {
+  margin-bottom: clamp(3rem, 5.5vw, 4.25rem);
 }
 
 .principles-grid {
@@ -535,12 +540,24 @@ button {
   gap: 1.75rem;
 }
 
+@media (max-width: 960px) {
+  .principles-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 .principle-box {
-  background-color: var(--c-bg-card);
-  border: 1px solid var(--c-border-medium);
-  border-radius: var(--radius-md);
-  padding: 2.25rem;
-  box-shadow: 0 4px 14px rgba(12, 37, 27, 0.03);
+  background-color: #ffffff;
+  border: 1px solid rgba(12, 37, 27, 0.08);
+  border-radius: 20px;
+  padding: clamp(2rem, 3.5vw, 2.5rem);
+  box-shadow: 0 4px 14px rgba(12, 37, 27, 0.025);
+  transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.principle-box:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 28px rgba(12, 37, 27, 0.06);
 }
 
 .principle-title {
