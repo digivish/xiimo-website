@@ -267,10 +267,10 @@ button {
 }
 
 .hero-container {
-  display: grid;
-  grid-template-columns: 1.25fr 0.75fr;
-  gap: clamp(2.5rem, 5vw, 4.5rem);
-  align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 900px;
   position: relative;
   z-index: 2;
 }
@@ -279,10 +279,11 @@ button {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  width: 100%;
 }
 
 .hero-brand-headline {
-  margin-bottom: 1.25rem;
+  margin-bottom: 1.5rem;
 }
 
 .studio-mark {
@@ -297,20 +298,21 @@ button {
 
 .hero-statement {
   font-family: var(--font-brand);
-  font-size: clamp(1.85rem, 3.8vw, 2.75rem);
+  font-size: clamp(2.25rem, 4.8vw, 3.65rem);
   font-weight: 800;
-  line-height: 1.15;
+  line-height: 1.12;
   letter-spacing: -0.035em;
   color: var(--c-forest-deep);
-  margin-bottom: 1.25rem;
+  margin-bottom: 1.5rem;
+  max-width: 860px;
 }
 
 .hero-subtext {
-  font-size: clamp(1rem, 1.6vw, 1.125rem);
+  font-size: clamp(1.05rem, 1.8vw, 1.25rem);
   color: var(--c-forest-muted);
   line-height: 1.65;
-  max-width: 580px;
-  margin-bottom: 2.25rem;
+  max-width: 720px;
+  margin-bottom: 2.5rem;
   font-weight: 450;
 }
 
@@ -355,66 +357,6 @@ button {
 
 .btn-ghost-dark:hover {
   background-color: rgba(12, 37, 27, 0.08);
-}
-
-/* Master Brand Identity Tile (Restrained, high-craft brand specimen) */
-.hero-brand-panel {
-  display: flex;
-  justify-content: flex-end;
-}
-
-.identity-badge {
-  width: 100%;
-  max-width: 380px;
-  background-color: var(--c-forest-deep);
-  color: #ffffff;
-  border-radius: var(--radius-lg);
-  padding: clamp(2rem, 4vw, 2.75rem);
-  box-shadow: 0 24px 50px rgba(12, 37, 27, 0.22);
-  border: 1px solid rgba(158, 227, 190, 0.2);
-}
-
-.badge-header {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  margin-bottom: 1.75rem;
-}
-
-.badge-monogram {
-  display: flex;
-  align-items: center;
-}
-
-.badge-name {
-  font-family: var(--font-brand);
-  font-size: 1.75rem;
-  font-weight: 800;
-  letter-spacing: -0.04em;
-  line-height: 1;
-  color: var(--c-mint-accent);
-}
-
-.badge-body {
-  margin-bottom: 2rem;
-}
-
-.badge-statement {
-  font-size: 0.98rem;
-  line-height: 1.65;
-  color: #daf5e7;
-  font-weight: 400;
-}
-
-.badge-footer-meta {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding-top: 1.5rem;
-  border-top: 1px solid rgba(158, 227, 190, 0.2);
-  font-family: var(--font-mono);
-  font-size: 0.75rem;
-  color: var(--c-mint-border);
 }
 
 /* ==========================================================================
