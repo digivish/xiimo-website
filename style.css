@@ -4,6 +4,25 @@
    Clean, restrained editorial layout. Zero AI pills, zero speculative tags.
    ========================================================================== */
 
+/* ==========================================================================
+   Typography — Self-Hosted Aeonik Display Font
+   ========================================================================== */
+@font-face {
+  font-family: 'Aeonik';
+  src: url('/fonts/Aeonik-Regular.woff2') format('woff2');
+  font-weight: 400 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Aeonik';
+  src: url('/fonts/Aeonik-Bold.woff2') format('woff2');
+  font-weight: 600 900;
+  font-style: normal;
+  font-display: swap;
+}
+
 :root {
   /* Core Color System */
   --c-mint-hero: #bfead4;
@@ -29,7 +48,7 @@
   --c-border-medium: rgba(12, 37, 27, 0.14);
 
   /* Typography */
-  --font-brand: 'Outfit', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-brand: 'Aeonik', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   --font-mono: 'JetBrains Mono', SFMono-Regular, Menlo, Monaco, monospace;
 
