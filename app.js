@@ -35,33 +35,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // 2. Email Copy Interaction
-  const copyBtn = document.getElementById('copyEmailBtn');
-  const copyBtnText = document.getElementById('copyBtnText');
-  const emailAddress = 'hello@xiimo.com';
-
-  if (copyBtn && copyBtnText) {
-    let timeoutId = null;
-
-    copyBtn.addEventListener('click', async () => {
-      try {
-        await navigator.clipboard.writeText(emailAddress);
-        copyBtnText.textContent = 'Copied!';
-        copyBtn.style.backgroundColor = '#ffffff';
-
-        if (timeoutId) clearTimeout(timeoutId);
-
-        timeoutId = setTimeout(() => {
-          copyBtnText.textContent = 'Copy';
-          copyBtn.style.backgroundColor = '';
-        }, 2000);
-      } catch (err) {
-        window.location.href = `mailto:${emailAddress}`;
-      }
-    });
-  }
-
-  // 3. Dynamic Footer Year
+  // 2. Dynamic Footer Year
   const yearEl = document.getElementById('currentYear');
   if (yearEl) {
     yearEl.textContent = new Date().getFullYear();
